@@ -3,26 +3,28 @@
     height: 50px;
 }
 
-.logo  {
+.logo {
     float: left;
 }
 
 .searchbar {
     text-align: center;
     width: 100%;
-    border:  none;
+    border: none;
     padding: 6px;
     font-size: 27px;
 }
 
 .icon {
-    float: right;
     margin: 10px;
-    position: relative;
     padding-top: -30px;
 }
 
 .video {
     width: 100%;
+    text-align: center;
+}
+
+header {
     text-align: center;
 }
