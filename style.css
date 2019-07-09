@@ -1,23 +1,28 @@
-.nav {
-    background-color: black;
-    height: 50px;
+body {
+    background-color: grey;
 }
-
-.logo {
-    float: left;
-}
-
-.searchbar {
+.search {
     text-align: center;
-    width: 100%;
-    border: none;
-    padding: 6px;
-    font-size: 27px;
+    padding-left:  800px;
+}
+
+input[type="text"] {
+    display: block;
+    margin : 0 auto;
+    width: 500px;
+}
+
+.row {
+    margin-top: 0;
 }
 
 .icon {
     margin: 10px;
     padding-top: -30px;
+}
+
+.icons {
+    
 }
 
 .video {
@@ -28,3 +33,17 @@
 header {
     text-align: center;
 }
+
+.sidebar img {
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  
+  .sidebar img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+  .recommended {
+     margin-top: 100px;
+  }
