@@ -1,30 +1,153 @@
-.nav {
-    background-color: black;
-    height: 50px;
+/* HTML5 display-role reset for older browsers */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+
+/*----Header---*/
+
+.header {
+    width: 1263px;
+    height: 52px;
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+}
+
+.left-menu {
+    float: left;
+    margin-left: 30px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.dropdown {
+    float: left;
+    width: 38px;
+    height: 28px;
+}
+
+.dropdown img {
+    height: 30px;
+    width: 36px;
+}
+
+.dropdown:hover {
+    cursor: pointer;
 }
 
 .logo {
+    float: right;
+    width: 162px;
+    margin-top: -25px;
+    margin-left: -8px;
+}
+
+.logo img {
+    width: 132px;
+    height: 80px;
+    background-size: auto;
+}
+
+
+/*-----Search Bar---*/
+
+.form {
     float: left;
+    margin-top: 10px;
 }
 
-.searchbar {
+.form input {
+    height: 29px;
+    width: 583px;
+    border: 1px solid #c6c6c6;
+    ;
+}
+
+.search-btn {
+    width: 65px;
+    height: 27px;
+    float: left;
+    margin-top: 10px;
+    border: 1px solid #c6c6c6;
+    border-left: none;
     text-align: center;
-    width: 100%;
-    border: none;
-    padding: 6px;
-    font-size: 27px;
 }
 
-.icon {
-    margin: 10px;
-    padding-top: -30px;
+.search-btn img {
+    width: 20px;
+    height: 24px;
 }
 
-.video {
-    width: 100%;
-    text-align: center;
+.search-btn:hover {
+    background-color: #e8e8e8;
+    cursor: pointer;
 }
 
-header {
-    text-align: center;
+.right-menu {
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+button {
+    height: 29px;
+    margin-left: 10px;
+    border: 1px solid #d3d3d3;
+    background-color: #f8f8f8;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+section {
+    background-color: #bbbbbb;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+article {
+    background-color: white;
+    margin-top: 5px;
+    padding: 10px 15px;
+}
+
+main {
+    float: left;
+    margin-bottom: 10px;
+}
+
+aside {
+    background-color: #bbbbbb;
+    width: 270px;
+    float: right;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+footer {
+    clear: both;
+    background-color: #20416c;
+    color: white;
+    padding: 15px 20px;
 }
