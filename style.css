@@ -1,7 +1,16 @@
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+.topnav {
+    display: flex;
+}
+
 .video-player{
     display:flex;
     width: 90%;
     margin:auto;
+    margin-top: 50px;
 }
 
 .video-container{
