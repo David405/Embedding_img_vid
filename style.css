@@ -1,90 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 14px;
+  color: rgb(27, 27, 27);
+}
+
 body {
-    font-family: 'Abel', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 header {
-    width: 100%;
-    height: 80px;
-    border-bottom: 1px solid whitesmoke;
-    background: white;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(255, 254, 254);
+  z-index: 999;
+  border-bottom: 1px solid ghostwhite;
 }
 
-input {
-    position: relative;
-    top:-40px;
-    left: 300px;
-    padding: 5px;
-    font-size: 20px;
-    width: 450px;  
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    display: flex;
-    align-items: center;
+.container_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 13px;
 }
-.search_icon {
-    position: relative;
-    top:-70px;
-    left: 750px;
-    padding: 5px;
-    background: white;
-    
-}
- .notification {
-    display: flex;
-    align-items: center;
-    position: relative;
-    top:-135px;
-    left: 1000px;
-    
-   
+.search-bar {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.video-player{
-    display:flex;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;
+.search-bar input {
+  width: 580px;
+  height: 30px;
+  border-radius: 2px 0 0 2px;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+  box-shadow: inset 0 1px 2px #eee;
+  padding: 2px 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #333
 }
 
-.video-container{
-    margin-right:40px;
+.search-bar button {
+  width: 65px;
+  background-color: #f8f8f8;
+  border: 1px solid #d3d3d3;
+  border-radius: 0 2px 2px 0;
+  padding: 2px 8px;
 }
 
-.row{
-    display:flex;
-    justify-content:space-between;
+.search-bar button>img {
+  width: 20px;
+  height: 20px;
+  color: #333;
+  opacity: 0.6;
 }
 
-button{
-    background:#D0021B;
-    color:white;
-    border:none;
-    padding:10px 20px;
+.header-end {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
-.thumbnail {
-    display:flex;
-    flex-direction: row;
-  }
-
-  .thumbnail img{
-    width:168px;
-}
-
-.thumbnail-info{
-    margin-left:20px;
-}
-
-.thumbnail h3{
-    font-size:16px;
-}
-
-h3,
-p{
-    margin:0;
-    padding:0;
-}
-
-.thumbnail-views{
-    font-size:14px;
+.header-end>a {
+  color: #1c6dd7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 16px;
 }
