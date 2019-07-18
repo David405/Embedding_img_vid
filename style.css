@@ -133,3 +133,7 @@ body {
 .about-video{
  flex: 2;
 }
+.btn-show {
+  width:50%;
+  margin-top: 40px;
+}
