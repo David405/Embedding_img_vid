@@ -7,27 +7,114 @@
     </head>
     <body>
         <nav>
-          <div class="topnav">
-            <a class="active" href="#"><img src="images/download.png" style="height: 30px; width:40px;"/></a>
-            
-            <div class="search-container">
-              <form>
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit">Submit</button>
-                </form>
-              </div>
-                <a href="#"><i class="fa fa-bell icon-nav"></i></a>
-                <a href="#"><i class='fa fa-user-circle icon-nav'></i></a>
-          </div>
+            <div id="navbar">
+                <div class="flex-row space-between align-center h-padding">
+                    <!--menu and logo-->
+                    <div class="flex-row align-center">
+                        <div class="button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/menu.png" alt="Menu button">
+                            </a>
+                        </div>
+                        <div class="logo h-margin">
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <img class="contained-img" src="images/800px-Logo_YouTube_por_Hernando.svg.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <!--search bar-->
+                    <div class="flex-row">
+                        <input id="search-bar" type="search" placeholder="Search">
+                        <button id="search-button" class="weak" type="submit" value="Submit">
+                            <img class="button auto-margin" src="images/magnifier.png" alt="Search button">
+                        </button>
+                    </div>
+                    <!--small buttons-->
+                    <div class="flex-row align-center">
+                        <div class="small-button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/new_vid.png" alt="New video button">
+                            </a>
+                        </div>
+                        <div class="small-button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/apps.png" alt="Apps button">
+                            </a>
+                        </div>
+                        <div class="small-button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/messages.png" alt="Messages button">
+                            </a>
+                        </div>
+                        <div class="small-button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/notification.png" alt="Notification button">
+                            </a>
+                        </div>
+                        <div class="portrait h-margin">
+                            <a href="">
+                                <img class="contained-img round-img" src="images/square.jpg" alt="Your profile button">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </nav>
         <div class="video-player">
             <div class="video-container">
                 <iframe width="1200" height="700" src="https://www.youtube.com/embed/tgbNymZ7vqY" ></iframe>
                 <h3>JavaScript Tutorial for Advanced</h3>
-                  <div class="row">
-                      <p>4000 views</p> 
-                      <p>300 likes <button>Like</button></p>
-                  </div>
+                <div class="flex-col space-evenly">
+                    <p class="v-margin bold">Dig to build Most Awesome Underground House and Underground Swimming Pool</p>
+                    <div class="flex-row space-between">
+                        <p class="gray v-margin">123,456 views</p>
+                        <!--buttons-->
+                        <div class="flex-row space-evenly align-center v-margin">
+                            <!--like button-->
+                            <a class="weak" href="">
+                                <div class="flex-row align-center">
+                                    <div class="button">
+                                        <img class="contained-img" src="images/up-thumb.png" alt="Like button">
+                                    </div>
+                                    <p class="info bold">13K</p>
+                                </div>
+                            </a>
+                            <!--dislike button-->
+                            <a class="weak" href="">
+                                <div class="flex-row align-center">
+                                    <div class="button">
+                                        <img class="contained-img" src="images/down-thumb.png" alt="Dislike button">
+                                    </div>
+                                    <p class="info bold">473</p>
+                                </div>
+                            </a>
+                            <!--share button-->
+                            <a class="weak" href="">
+                                <div class="flex-row align-center">
+                                    <div class="button">
+                                        <img class="contained-img" src="images/share.png" alt="Share button">
+                                    </div>
+                                    <p class="info bold">SHARE</p>
+                                </div>
+                            </a>
+                            <!--save button-->
+                            <a class="weak" href="">
+                                <div class="flex-row align-center">
+                                    <div class="button">
+                                        <img class="contained-img" src="images/save.png" alt="Save button">
+                                    </div>
+                                    <p class="info bold">SAVE</p>
+                                </div>
+                            </a>
+                            <!--more button-->
+                            <a class="weak" href="">
+                                <div class="button">
+                                    <img class="contained-img" src="images/more.png" alt="More button">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
           </div>          
             <div class="video-list">
               <div class="thumbnail">

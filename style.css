@@ -2,9 +2,91 @@ body {
     font-family: 'Abel', sans-serif;
 }
 
-.topnav {
-    display: flex;
+#navbar{
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0 0 5px 5px rgba(180, 180, 180, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 8px;
 }
+
+#search-bar{
+    width: 540px;
+    height: 34px;
+    background-color: white;
+    border: 1px solid rgba(180, 180, 180, 0.5);
+    border-radius: 2px;
+    padding-left: 10px;
+}
+#search-button{
+    width: 60px;
+    height: 34px;
+    background-color: rgb(220, 220, 220);
+    border: 1px solid rgba(180, 180, 180, 0.5);
+    border-radius: 2px;
+}
+
+.v-margin{
+    margin: 10px 0;
+}
+.h-margin{
+    margin: 0 10px;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.contained-img{
+    height: 100%;
+    width: 100%;
+}
+.logo{
+    height: 30px;
+    width: 90px;
+}
+
+.portrait{
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.round-img{
+    border-radius: 50%;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.v-padding{
+    padding: 20px 0;
+}
+.h-padding{
+    padding: 0 20px;
+}
+
+.weak{
+    opacity: 0.7;
+}
+.weak:hover{
+    opacity: 1.0;
+}
+
+.button{
+    height: 18px;
+    width: 18px;
+}
+
+.small-button {
+    height: 30px;
+    width: 30px;
+} 
 
 .video-player{
     display:flex;
@@ -22,7 +104,7 @@ body {
     justify-content:space-between;
 }
 
-button{
+.like-button{
     background:#D0021B;
     color:white;
     border:none;
