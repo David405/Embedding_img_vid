@@ -1,44 +1,246 @@
-<html>
+<html1>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
-
-<body>
-    <header>
+    </head>
+    <body>
         <nav>
-            <div class="nav">
-                <a class="logo" href="#"><img src="https://picsum.photos/id/0/5616/3744" style="height: 50px; width: 50px;"></a>
-                <div class="searchbar">
-                    <input type="text" placeholder="Search">
-                    <button type="submit"><i class="fa fa-search"></button>
+            <div id="navbar">
+                <div class="flex-row space-between align-center h-padding">
+                    <!--menu and logo-->
+                    <div class="flex-row align-center">
+                        <div class="button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/menu.png" alt="Menu button">
+                            </a>
+                        </div>
+                        <div class="logo h-margin">
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <img class="contained-img" src="images/800px-Logo_YouTube_por_Hernando.svg.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <!--search bar-->
+                    <div class="flex-row">
+                        <input id="search-bar" type="search" placeholder="Search">
+                        <button id="search-button" class="weak" type="submit" value="Submit">
+                            <img class="button auto-margin" src="images/magnifier.png" alt="Search button">
+                        </button>
+                    </div>
+                    <!--small buttons-->
+                    <div class="flex-row align-center">
+                        <div class="small-button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/new_vid.png" alt="New video button">
+                            </a>
+                        </div>
+                        <div class="small-button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/apps.png" alt="Apps button">
+                            </a>
+                        </div>
+                        <div class="small-button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/messages.png" alt="Messages button">
+                            </a>
+                        </div>
+                        <div class="small-button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/notification.png" alt="Notification button">
+                            </a>
+                        </div>
+                        <div class="portrait h-margin">
+                            <a href="">
+                                <img class="contained-img round-img" src="images/square.jpg" alt="Your profile button">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <a class="icon" href="#"><img src="https://picsum.photos/id/1005/5760/3840" style="height: 50px; width: 50px;"></a>
-                <a class="icon" href="#"><img src="https://picsum.photos/id/1005/5760/3840" style="height: 50px; width: 50px;"></a>
-                <a class="icon" href="#"><img src="https://picsum.photos/id/1005/5760/3840" style="height: 50px; width: 50px;"></a>
             </div>
-        </nav>
+          </nav>
+        <div class="video-player">
+            <div class="video-container">
+                <iframe width="1200" height="700" src="https://www.youtube.com/embed/tgbNymZ7vqY" ></iframe>
+                <h3>JavaScript Tutorial for Advanced</h3>
+                <div class="flex-col space-evenly">
+                    <p class="v-margin bold">Dig to build Most Awesome Underground House and Underground Swimming Pool</p>
+                    <div class="flex-row space-between">
+                        <p class="gray v-margin">123,456 views</p>
+                        <!--buttons-->
+                        <div class="flex-row space-evenly align-center v-margin">
+                            <!--like button-->
+                            <a class="weak" href="">
+                                <div class="flex-row align-center">
+                                    <div class="button">
+                                        <img class="contained-img" src="images/up-thumb.png" alt="Like button">
+                                    </div>
+                                    <p class="info bold">13K</p>
+                                </div>
+                            </a>
+                            <!--dislike button-->
+                            <a class="weak" href="">
+                                <div class="flex-row align-center">
+                                    <div class="button">
+                                        <img class="contained-img" src="images/down-thumb.png" alt="Dislike button">
+                                    </div>
+                                    <p class="info bold">473</p>
+                                </div>
+                            </a>
+                            <!--share button-->
+                            <a class="weak" href="">
+                                <div class="flex-row align-center">
+                                    <div class="button">
+                                        <img class="contained-img" src="images/share.png" alt="Share button">
+                                    </div>
+                                    <p class="info bold">SHARE</p>
+                                </div>
+                            </a>
+                            <!--save button-->
+                            <a class="weak" href="">
+                                <div class="flex-row align-center">
+                                    <div class="button">
+                                        <img class="contained-img" src="images/save.png" alt="Save button">
+                                    </div>
+                                    <p class="info bold">SAVE</p>
+                                </div>
+                            </a>
+                            <!--more button-->
+                            <a class="weak" href="">
+                                <div class="button">
+                                    <img class="contained-img" src="images/more.png" alt="More button">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-        <h1>Muppet Playing Drum</h1>
-        <div class="video">
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                            </iframe>
+      <!--sidebar-->
+          </div>          
+            <div class="video-list">
+              <div class="thumbnail">
+                <div class="thumbnail-img">
+                    <img src="https://i.ytimg.com/vi/KB4_WIPE7vo/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCCxXm7aoPShOwON74nhMlGYMUkHw"/>
+                </div>
+                <div class="thumbnail-info">
+                  <h3>The Apple Ecosystem explained</h3>
+                  <p>Marques Brownlee</p>
+                  <p class="thumbnail-views">300 views</p>
+                </div>
+                </div>
+                <div class="thumbnail">
+                <div class="thumbnail-img">
+                    <img src="https://i.ytimg.com/vi/pqQrL1K0Z5g/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA5hTiwkz4Tr1w1hSMhPlwtmQeyYw"/>
+                </div>
+                <div class="thumbnail-info">
+                  <h3>Talking tech with Neil deGrasse Tyson</h3>
+                  <p>Marquee Brownlee</p>
+                  <p class="thumbnail-views">400 views</p>
+                </div>
+              </div>
+              <div class="thumbnail">
+                <div class="thumbnail-img">
+                    <img src="https://i.ytimg.com/vi/ctx4YBEdOxo/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBDnlrC2rVwXamNkicEEbc3Mf4T0w"/>
+                </div>
+                <div class="thumbnail-info">
+                  <h3>Let's Talk about Tesla Roadster 2020</h3>
+                  <p>Marquee Brownlee</p>
+                  <p class="thumbnail-views">500 views</p>
+                </div>
+              </div>
+              <div class="thumbnail">
+                <div class="thumbnail-img">
+                    <img src="https://i.ytimg.com/vi/UIwdCN4dV6w/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDhlan32jHSvicGZezDFPjAOdXGUA"/>
+                </div>
+                <div class="thumbnail-info">
+                  <h3>Dope Tech: Camera Robots</h3>
+                  <p>Marquee Brownlee</p>
+                  <p class="thumbnail-views">279 views</p>
+                </div>
+                </div>
+                <div class="thumbnail">
+                    <div class="thumbnail-img">
+                        <img src="https://i.ytimg.com/vi/KB4_WIPE7vo/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCCxXm7aoPShOwON74nhMlGYMUkHw"/>
+                    </div>
+                    <div class="thumbnail-info">
+                      <h3>The Apple Ecosystem explained</h3>
+                      <p>Marques Brownlee</p>
+                      <p class="thumbnail-views">300 views</p>
+                    </div>
+                    </div>
+                    <div class="thumbnail">
+                    <div class="thumbnail-img">
+                        <img src="https://i.ytimg.com/vi/pqQrL1K0Z5g/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA5hTiwkz4Tr1w1hSMhPlwtmQeyYw"/>
+                    </div>
+                    <div class="thumbnail-info">
+                      <h3>Talking tech with Neil deGrasse Tyson</h3>
+                      <p>Marquee Brownlee</p>
+                      <p class="thumbnail-views">400 views</p>
+                    </div>
+                  </div>
+                  <div class="thumbnail">
+                    <div class="thumbnail-img">
+                        <img src="https://i.ytimg.com/vi/ctx4YBEdOxo/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBDnlrC2rVwXamNkicEEbc3Mf4T0w"/>
+                    </div>
+                    <div class="thumbnail-info">
+                      <h3>Let's Talk about Tesla Roadster 2020</h3>
+                      <p>Marquee Brownlee</p>
+                      <p class="thumbnail-views">500 views</p>
+                    </div>
+                  </div>
+                  <div class="thumbnail">
+                    <div class="thumbnail-img">
+                        <img src="https://i.ytimg.com/vi/UIwdCN4dV6w/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDhlan32jHSvicGZezDFPjAOdXGUA"/>
+                    </div>
+                    <div class="thumbnail-info">
+                      <h3>Dope Tech: Camera Robots</h3>
+                      <p>Marquee Brownlee</p>
+                      <p class="thumbnail-views">279 views</p>
+                    </div>
+                    </div>
+                    <div class="thumbnail">
+                        <div class="thumbnail-img">
+                            <img src="https://i.ytimg.com/vi/KB4_WIPE7vo/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCCxXm7aoPShOwON74nhMlGYMUkHw"/>
+                        </div>
+                        <div class="thumbnail-info">
+                          <h3>The Apple Ecosystem explained</h3>
+                          <p>Marques Brownlee</p>
+                          <p class="thumbnail-views">300 views</p>
+                        </div>
+                        </div>
+                        <div class="thumbnail">
+                        <div class="thumbnail-img">
+                            <img src="https://i.ytimg.com/vi/pqQrL1K0Z5g/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA5hTiwkz4Tr1w1hSMhPlwtmQeyYw"/>
+                        </div>
+                        <div class="thumbnail-info">
+                          <h3>Talking tech with Neil deGrasse Tyson</h3>
+                          <p>Marquee Brownlee</p>
+                          <p class="thumbnail-views">400 views</p>
+                        </div>
+                      </div>
+                      <div class="thumbnail">
+                        <div class="thumbnail-img">
+                            <img src="https://i.ytimg.com/vi/ctx4YBEdOxo/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBDnlrC2rVwXamNkicEEbc3Mf4T0w"/>
+                        </div>
+                        <div class="thumbnail-info">
+                          <h3>Let's Talk about Tesla Roadster 2020</h3>
+                          <p>Marquee Brownlee</p>
+                          <p class="thumbnail-views">500 views</p>
+                        </div>
+                      </div>
+                      <div class="thumbnail">
+                        <div class="thumbnail-img">
+                            <img src="https://i.ytimg.com/vi/UIwdCN4dV6w/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDhlan32jHSvicGZezDFPjAOdXGUA"/>
+                        </div>
+                        <div class="thumbnail-info">
+                          <h3>Dope Tech: Camera Robots</h3>
+                          <p>Marquee Brownlee</p>
+                          <p class="thumbnail-views">279 views</p>
+                        </div>
+                        </div>
+                      </div>
         </div>
-        <div>
-            <h4>View:789</h4>
-            <a href="#"></a><i class="fas fa-thumbs-up"></i></a>
-            <a href="#"></a><i class="fas fa-thumbs-down"></i></a>
-            <button>Share</button>
-            <button>Suscribe</button>
-            <img src="https://img.icons8.com/color/96/000000/boy-avatar.png">
-
-
-        </div>
-
-    </header>
-
-</body>
-
+        
+    </body>
 </html>

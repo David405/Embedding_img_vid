@@ -1,30 +1,171 @@
-.nav {
-    background-color: black;
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+#navbar{
+    width: 100vw;
     height: 50px;
+    background-color: white;
+    box-shadow: 0 0 5px 5px rgba(180, 180, 180, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 8px;
 }
 
-.logo {
-    float: left;
+#search-bar{
+    width: 540px;
+    height: 34px;
+    background-color: white;
+    border: 1px solid rgba(180, 180, 180, 0.5);
+    border-radius: 2px;
+    padding-left: 10px;
+}
+#search-button{
+    width: 60px;
+    height: 34px;
+    background-color: rgb(220, 220, 220);
+    border: 1px solid rgba(180, 180, 180, 0.5);
+    border-radius: 2px;
 }
 
-.searchbar {
-    text-align: center;
+.v-margin{
+    margin: 10px 0;
+}
+.h-margin{
+    margin: 0 10px;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.contained-img{
+    height: 100%;
     width: 100%;
-    border: none;
-    padding: 6px;
-    font-size: 27px;
+}
+.logo{
+    height: 30px;
+    width: 90px;
 }
 
-.icon {
-    margin: 10px;
-    padding-top: -30px;
+.portrait{
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
 }
 
-.video {
-    width: 100%;
-    text-align: center;
+.round-img{
+    border-radius: 50%;
 }
 
-header {
-    text-align: center;
+.space-between{
+    justify-content: space-between;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+.align-center{
+    align-items: center;
+}
+.v-padding{
+    padding: 20px 0;
+}
+.h-padding{
+    padding: 0 20px;
+}
+
+.gray{
+    color: gray;
+}
+
+.weak{
+    opacity: 0.7;
+}
+.weak:hover{
+    opacity: 1.0;
+}
+
+.button{
+    height: 18px;
+    width: 18px;
+}
+
+.small-button {
+    height: 30px;
+    width: 30px;
+} 
+
+.video-player{
+    display:flex;
+    width: 90%;
+    margin:auto;
+    margin-top: 50px;
+}
+
+.video-container{
+    margin-right:40px;
+}
+
+.video-list {
+    margin-top: 300px;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.info{
+    color: gray;
+    line-height: 18px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+}
+
+.like-button{
+    background:#D0021B;
+    color:white;
+    border:none;
+    padding:10px 20px;
+}
+
+.thumbnail {
+    display:flex;
+    flex-direction: row;
+  }
+
+  .thumbnail img{
+    width:168px;
+}
+
+.thumbnail-info{
+    margin-left:20px;
+}
+
+.thumbnail h3{
+    font-size:16px;
+}
+
+h3,
+p{
+    margin:0;
+    padding:0;
+}
+
+.thumbnail-views{
+    font-size:14px;
 }
